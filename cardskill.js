@@ -32,10 +32,10 @@ const handlers = {
         var lastRandomCard = this.attributes['lastRandomCard'];
 
         if (lastRandomCard != null) {
-            this.response.speak(lastRandomCard.answer + '<break time="3s"/> Say give me the next card to get another card.')
+            this.response.speak(lastRandomCard.answer + ' <break time="1s"/> Say give me the next card to get another card.')
                          .listen('Say give me the next card to get another card.');
         } else {
-            this.response.speak('Please ask for a card first.<break time="3s"/> Say give me a card to get a card.')
+            this.response.speak('Please ask for a card first. <break time="1s"/> Say give me a card to get a card.')
                          .listen('Say give me a card to get a card.');
         }
         this.emit(':responseReady');
