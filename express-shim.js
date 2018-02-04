@@ -4,8 +4,8 @@ const bodyParser = require('body-parser');
 const context = require('aws-lambda-mock-context');
 
 const Alexa = require("alexa-sdk");
-//var lambda = require('./index');
-var lambda = require('./cardskill');
+var lambda = require('./index');
+//var lambda = require('./cardskill');
 
 const app = express();
 
